@@ -1,1 +1,363 @@
-/* место для вашего кода */
+body {
+  
+  width: 1100px;
+}
+.wrapper{
+min-height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+/* HEADER */
+
+
+.header {
+
+  margin: 92px 24px 96px 24px;
+  height: 105px;
+  width: 1052px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.header__menu {
+  width: 392px;
+  grid-column: 1/4;
+  align-self: center;
+  justify-items: center;
+  margin-left: 24px;
+  letter-spacing: 0.01em;
+  line-height: 1.35px;
+  font-weight: 400;
+}
+.header__links-list {
+  display: flex;
+  list-style: circle;
+  justify-content: space-between;
+}
+.header__links-list-item {
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+.header__links-list-item_no-bullit {
+  display: block;
+}
+
+.header__link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.header__link_active {
+ text-decoration: none;
+}
+
+.header__logo {
+  grid-column: 4/5;
+}
+.header__logo-image {
+  height: 105px;
+  width: 150px;
+}
+.address {
+  font-style: normal;
+  width: 240px;
+  height: 98px;
+  margin: 5px 25px 2px auto;
+  grid-column: 6/8;
+  letter-spacing: 0.001em;
+  line-height: 1.35;
+}
+.address a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+.content {
+  color: #fff;
+  width: 1100px;
+  flex: 1 1 auto;
+}
+
+
+/* COVER */
+.overlay{
+  background-color: rgba(1, 1, 1, 0.6);
+  z-index: 3;
+}
+
+.content .overlay {
+  
+  position: absolute;
+  height: 757px;
+  width: 1100px;
+ 
+  
+  }
+.cover {
+  background-image: url(/ono-tebe-nado/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  max-height: 757px;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px;
+  z-index: 1;
+}
+.aligned-text {
+display: block;
+letter-spacing: 0.3em;
+}
+.aligned-text_center {
+text-align: center;
+padding-top: 10px;
+margin-left: -25px;
+}
+.no-letter-spacing{
+  margin-right: -0.3em ;
+}
+.aligned-text_right {
+text-align: end;
+}
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  height: 355px;
+  width: 1000px;
+  font-size: 100px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.letter-spacing-extended{
+  letter-spacing: 0.6em;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 972px;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 135px 50px 50px 30px;
+  z-index: 3;
+}
+.cover__description-text {
+  font-weight: 100;
+  word-spacing: 18px;
+}
+.bet-button {
+  height: 51px;
+  width: 256px;
+  font-size: 22px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+/* LOTS */
+
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.lots {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 692px;
+  width: 1052px;
+  margin: 180px auto auto;
+}
+.lots__heading {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+.lots__card-list {
+  max-height: 563px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.lots__card-list .overlay{
+  width: inherit;
+  height: 563px ;
+  z-index: 3;
+}
+.lots__card-list-item {
+  
+  width: 335px;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 43px 40px;
+ 
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; 
+  z-index: 4;
+}
+ .card__title{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+} 
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+
+
+/* ABOUT SECTION */
+
+
+.about{
+width: 1052px;
+height: 595px;
+color: #000;
+margin:146px 24px auto;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.about__logo {
+  background-color: #000;
+  height: 240px;
+  width: 240px;
+  border-radius: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 35px 72px auto 47px;
+}
+
+.about__logo-image {
+  height: 200px;
+  width: 150px;
+
+}
+.about__text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+.about__title {
+padding-bottom: 100px;
+font-weight: 700;
+font-size: 40px;
+text-transform: uppercase;
+line-height: 135% ;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  line-height: 120%;
+}
+.about__text--padding-bottom{
+ padding-bottom: 24px; 
+}
+
+
+/* FOOTER */
+
+
+.footer {
+  height: 98px;
+  width: 1000px;
+  margin: 180px auto 88px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+}
+footer .address {
+  margin: 0;
+  align-self: start;
+  grid-column: 1/2;
+}
+.footer__menu {
+  justify-self: center;
+  text-align: center;
+  grid-column: 3/5;
+  margin-left: 12px;
+}
+.footer__menu-list {
+  list-style: none;
+  
+}
+.footer__menu-list-item {
+  
+}
+.footer__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 4px
+}
+.footer__menu-link_active {
+  text-decoration: none;
+}
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  grid-column: 6/8;
+  justify-self: right;
+}
+.footer__social-list-item {
+}
+.footer__social-link {
+}
+.footer__social-icon{
+  max-width: 48px;
+  max-height: 48px;
+}
