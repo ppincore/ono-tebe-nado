@@ -1,0 +1,1 @@
+git@github.com:ppincore/ono-tebe-nado.git
